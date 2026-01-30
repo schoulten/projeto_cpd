@@ -73,12 +73,35 @@ O foco do projeto não é apenas a acurácia, mas a **clareza do processo analí
 
 ---
 
-## Como executar
+## Estrutura do Projeto
 
-1. Abra o notebook no Google Colab
-2. Execute as células sequencialmente
-3. O download dos dados é feito automaticamente
-4. Ao final, as previsões e gráficos são gerados
+```
+├── scripts/
+│   ├── previsao_demanda.py    # Código principal
+│   └── config.py              # Configurações do projeto
+├── notebooks/
+│   └── previsao_demanda.ipynb # Notebook
+├── imgs/                      # Imagens e gráficos
+├── requirements.txt           # Dependências do projeto
+└── README.md                  # Este arquivo
+```
+
+---
+
+## Instalação
+
+1. Clone o repositório
+2. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+
+## Uso
+
+### Execução completa do pipeline:
+```bash
+python scripts/previsao_demanda.py
+```
 
 ---
 
